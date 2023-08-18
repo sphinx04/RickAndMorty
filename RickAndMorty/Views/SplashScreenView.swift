@@ -20,6 +20,8 @@ struct SplashScreenView: View {
                 .opacity(isSplashPresented ? 1 : 0)
             Image("Portal")
                 .resizable()
+                .scaledToFit()
+                .aspectRatio(1, contentMode: .fit)
                 .opacity(isPortalPresented ? 1 : 0)
                 .scaleEffect(isPortalPresented ? 0.4 : 0)
         } //ZSTACK
